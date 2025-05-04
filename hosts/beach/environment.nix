@@ -9,5 +9,12 @@
     traceroute
     vim
     wget
+    zsh
   ];
+
+  environment.variables = {
+    TERM="xterm-256color";
+  };
+
+  programs.zsh.enable = true;
 }
