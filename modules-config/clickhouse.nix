@@ -3,6 +3,11 @@
 {
   services.clickhouse.enable = true;
 
+  environment.systemPackages = with pkgs; [
+    clickhouse
+    clickhouse-cli
+  ];
+
   environment.etc."clickhouse-server/config.d/custom-config.xml".text = ''
     <clickhouse>
       <listen_host>0.0.0.0</listen_host>
