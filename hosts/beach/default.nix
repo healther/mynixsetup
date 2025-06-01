@@ -9,7 +9,7 @@
     ./users.nix
     ./environment.nix
     ../../modules-config/clickhouse.nix
-    ../../modules-config/gitlab.nix
+    # ../../modules-config/gitlab.nix
     ../../modules-config/grafana.nix
     ../../modules-config/mosh.nix
     ../../modules-config/tailscale.nix
